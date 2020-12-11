@@ -4,6 +4,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+e107::css(url, "/e107_plugins/lgsl/lgsl_files/css/ts3.css");
+
 define('ORIGINAL_INCLUDED', TRUE);
 
 $lgsl_config['title'][0] = '';
