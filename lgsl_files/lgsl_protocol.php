@@ -3603,7 +3603,7 @@ $lgsl_fp = @fsockopen("{$scheme}://{$server['b']['ip']}", $server['b']['q_port']
   function lgsl_query_33(&$server, &$lgsl_need, &$lgsl_fp)
   {
 
-    require_once "/srv/htdocs/team-aero.org/www/libraries/TeamSpeak3/TeamSpeak3.php";
+    require_once("/srv/htdocs/team-aero.org/www/libraries/TeamSpeak3/TeamSpeak3.php");
     
 
     try {

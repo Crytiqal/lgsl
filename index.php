@@ -14,9 +14,9 @@ error_reporting(E_ALL);
  
 //------------------------------------------------------------------------------------------------------------+
 
-  require_once "../../class2.php";
+  require_once("../../class2.php");
   
-  require_once HEADERF;
+  require_once(HEADERF);
 
 //------------------------------------------------------------------------------------------------------------+
 
@@ -26,9 +26,9 @@ error_reporting(E_ALL);
 
   $s = isset($_GET['s']) ? $_GET['s'] : "";
 
-  if     (is_numeric($s)) { $lgsl_server_id = $s; require "lgsl_files/lgsl_details.php"; }
-  elseif ($s == "add")    {                       require "lgsl_files/lgsl_add.php";     }
-  else                    {                       require "lgsl_files/lgsl_list.php";    }
+  if     (is_numeric($s)) { $lgsl_server_id = $s; require("lgsl_files/lgsl_details.php"); }
+  elseif ($s == "add")    {                       require("lgsl_files/lgsl_add.php");     }
+  else                    {                       require("lgsl_files/lgsl_list.php");    }
 
   $ns->tablerender($lgsl_config['title'][0], $output);
 
@@ -36,6 +36,6 @@ error_reporting(E_ALL);
 
 //------------------------------------------------------------------------------------------------------------+
 
-  require_once FOOTERF;
+  require_once(FOOTERF);
 
 //------------------------------------------------------------------------------------------------------------+

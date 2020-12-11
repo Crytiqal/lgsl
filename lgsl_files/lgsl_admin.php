@@ -12,7 +12,7 @@
 
   if (!defined("LGSL_ADMIN")) { exit("DIRECT ACCESS ADMIN FILE NOT ALLOWED"); }
 
-  require "lgsl_class.php";
+  require("lgsl_class.php");
 
   $link = lgsl_database();
   $lgsl_type_list     = lgsl_type_list(); asort($lgsl_type_list);

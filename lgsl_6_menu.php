@@ -4,6 +4,6 @@
 
   $output = "";  
   $lgsl_zone_number = 6;
-  require e_PLUGIN."lgsl/lgsl_files/lgsl_zone.php";
-  $ns -> tablerender($lgsl_config['title'][$lgsl_zone_number], $output);
+  require(e_PLUGIN."lgsl/lgsl_files/lgsl_zone.php");
+  $ns->tablerender($lgsl_config['title'][$lgsl_zone_number], $output);
   unset($output);

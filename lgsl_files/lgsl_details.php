@@ -14,7 +14,7 @@ error_reporting(E_ALL);
  
 //------------------------------------------------------------------------------------------------------------+
 
-  require "lgsl_class.php";
+  require("lgsl_class.php");
 
 //------------------------------------------------------------------------------------------------------------+
 // THIS CONTROLS HOW THE PLAYER FIELDS ARE DISPLAYED
@@ -40,12 +40,12 @@ error_reporting(E_ALL);
 
 //------------------------------------------------------------------------------------------------------------+
 
-  $filename = $_SERVER['DOCUMENT_ROOT']."/e107_plugins/lgsl/templates/lgsl_details_{$server['b']['type']}.php";
+  $filename = "lgsl_files/templates/lgsl_details-{$server['b']['type']}.php";
   
   if(file_exists($filename)) {
-    require $_SERVER['DOCUMENT_ROOT']."/e107_plugins/lgsl/templates/lgsl_details_{$server['b']['type']}.php";
+    require("lgsl_files/templates/lgsl_details-{$server['b']['type']}.php");
   } else {
-    require $_SERVER['DOCUMENT_ROOT']."/e107_plugins/lgsl/templates/lgsl_details_default.php";
+    require("lgsl_files/templates/lgsl_details-default.php");
   }
   
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

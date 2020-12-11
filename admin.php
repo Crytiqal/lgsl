@@ -4,11 +4,11 @@
 
   $eplug_admin = TRUE;
 
-  require_once "../../class2.php";
+  require_once("../../class2.php");
 
   if (!getperms("P")) { echo "YOU DO NOT HAVE PERMISSION TO CONFIGURE LGSL"; exit; }
 
-  require_once e_ADMIN."auth.php";
+  require_once(e_ADMIN."auth.php");
 
 //------------------------------------------------------------------------------------------------------------+
 
@@ -16,7 +16,7 @@
 
   $output = "";
 
-  require "lgsl_files/lgsl_admin.php";
+  require("lgsl_files/lgsl_admin.php");
 
   $ns->tablerender("Live Game Server List", $output);
 
@@ -24,6 +24,6 @@
 
 //------------------------------------------------------------------------------------------------------------+
 
-  require_once e_ADMIN."footer.php";
+  require_once(e_ADMIN."footer.php");
 
 //------------------------------------------------------------------------------------------------------------+

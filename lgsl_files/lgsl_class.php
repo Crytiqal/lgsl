@@ -1065,8 +1065,8 @@ error_reporting(E_ALL);
           <hr />#d5# ".@realpath($_SERVER['DOCUMENT_ROOT']);
   }
 
-  require $lgsl_file_path."lgsl_config.php";
-  require $lgsl_file_path."lgsl_protocol.php";
+  require($lgsl_file_path."lgsl_config.php");
+  require($lgsl_file_path."lgsl_protocol.php");
 
   $lgsl_url_path = lgsl_url_path();
 

@@ -14,7 +14,7 @@
 
   if (!isset($lgsl_zone_number)) { exit("LGSL PROBLEM: $lgsl_zone_number NOT SET"); }
 
-  require "lgsl_class.php";
+  require("lgsl_class.php");
 
   $zone_width = $lgsl_config['zone']['width']."%";
   $zone_grid  = isset($lgsl_config['grid'][$lgsl_zone_number]) ? $lgsl_config['grid'][$lgsl_zone_number] : 1;
