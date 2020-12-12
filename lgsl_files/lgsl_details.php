@@ -1,9 +1,5 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
  /*----------------------------------------------------------------------------------------------------------\
  |                                                                                                            |
  |                      [ LIVE GAME SERVER LIST ] [ � RICHARD PERRY FROM GREYCUBE.COM ]                       |
@@ -40,11 +36,10 @@ error_reporting(E_ALL);
 
 //------------------------------------------------------------------------------------------------------------+
 
-  $filename = "lgsl_files/templates/lgsl_details-{$server['b']['type']}.php";
-  
-  if(file_exists($filename)) {
+  if(file_exists("lgsl_files/templates/lgsl_details-{$server['b']['type']}.php")) {
     require("lgsl_files/templates/lgsl_details-{$server['b']['type']}.php");
   } else {
+    // require("lgsl_files/templates/lgsl_details-{$lgsl_config['theme']['details']}.php");
     require("lgsl_files/templates/lgsl_details-default.php");
   }
   

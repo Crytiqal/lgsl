@@ -1,7 +1,5 @@
 <?php
 
-e107::css(url, "/e107_plugins/lgsl/lgsl_files/css/default.css");
-
 $output .= "
   <div style='text-align:center'>
     <table style='margin:auto' cellpadding='4' cellspacing='2'>";
