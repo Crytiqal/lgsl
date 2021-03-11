@@ -1016,13 +1016,17 @@
   {
 //---------------------------------------------------------+
 
-    if ($server['b']['type'] == "etqw") { fwrite($lgsl_fp, "\xFF\xFFrcon\xFF".$server['b']['rconpassword']."\xFF".$lgsl_cmd."\x00"); }
-    else                                { fwrite($lgsl_fp, "\xFF\xFFrcon\xFF".$server['b']['rconpassword']."\xFF".$lgsl_cmd."\x00"); }
+    if ($server['b']['type'] == "etqw") { fwrite($lgsl_fp, "\xFF\xFFrcon\xFF" . $server['b']['rconpassword'] . "\xFF" . $lgsl_cmd . "\x00"); }
+    else                                { fwrite($lgsl_fp, "\xFF\xFFrcon\xFF" . $server['b']['rconpassword'] . "\xFF" . $lgsl_cmd . "\x00"); }
 
     // $buffer = fread($lgsl_fp, 4096);
 
     $buffer = [];
     while ($line = fgets($lgsl_fp)) {
+      /*
+      $line = mb_convert_encoding(trim($line), 'UTF-8', 'UTF-8');
+      if($line == "??print") { continue; } else { $buffer[] = str_replace("??print","",$line); }
+      */
       $buffer[] = $line;
     }
 
