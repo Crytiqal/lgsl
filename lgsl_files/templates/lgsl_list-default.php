@@ -18,7 +18,12 @@ $output .= "
         </td>
 
         <td title='{$lgsl_config['text']['slk']}' style='text-align:right'>
+          <!--
           <a href='{$misc['software_link']}' style='text-decoration:none'>
+            {$server['b']['ip']}:{$server['b']['c_port']}
+          </a>
+          -->
+          <a href='?r={$server['o']['id']}' style='text-decoration:none'>
             {$server['b']['ip']}:{$server['b']['c_port']}
           </a>
         </td>
@@ -33,7 +38,7 @@ $output .= "
           {$server['s']['map']}
         </td>
 
-        <td style='white-space:nowrap; text-align:right'>
+        <td style='white-space:nowrap; text-align:center'>
           {$server['s']['players']} / {$server['s']['playersmax']}
         </td>
 

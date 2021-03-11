@@ -2,6 +2,8 @@
 
   global $output, $lgsl_zone_number, $lgsl_config;
 
+  e107::js('gallery', 'js/default.js');
+  
   $output = "";  
   $lgsl_zone_number = 1;
   require(e_PLUGIN."lgsl/lgsl_files/lgsl_zone.php");

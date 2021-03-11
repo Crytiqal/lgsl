@@ -25,9 +25,11 @@ error_reporting(E_ALL);
   $output = "";
 
   $s = isset($_GET['s']) ? $_GET['s'] : "";
+  $r = isset($_GET['r']) ? $_GET['r'] : "";
 
   if     (is_numeric($s)) { $lgsl_server_id = $s; require("lgsl_files/lgsl_details.php"); }
   elseif ($s == "add")    {                       require("lgsl_files/lgsl_add.php");     }
+  elseif (is_numeric($r)) { $lgsl_server_id = $r; require("lgsl_files/lgsl_rcon.php");     }
   else                    {                       require("lgsl_files/lgsl_list.php");    }
 
   $ns->tablerender($lgsl_config['title'][0], $output);
